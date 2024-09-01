@@ -1,7 +1,7 @@
 import * as markedjs from "./3rdparty/marked.esm.js";
 
 async function fetchBlogs() {
-    const blogDir = "../blogs";
+    const blogDir = "./blogs";
     const supportedFormats = [".md"]; //cannot support .org now
     
     let blogs = [];
