@@ -36,6 +36,12 @@ async function fetchBlogs() {
 	blogListElem.append(liElem);
     }
 
+    if(blogs.length == 0){
+	const liElem = document.createElement("li");
+	liElem.append("empty");
+	blogListElem.append(liElem);
+    }
+
     return true;
 }
 
